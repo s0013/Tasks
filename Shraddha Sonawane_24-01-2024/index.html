@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>SD International School</title>
+</head>
+<body>
+
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                
+                <form>
+                    <div class="form-group">
+                        <label for="signInEmail">Email address:</label>
+                        <input type="email" class="form-control" id="signInEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signInPassword">Password:</label>
+                        <input type="password" class="form-control" id="signInPassword" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="registerModalLabel">Register</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                
+                <form>
+                    <div class="form-group">
+                        <label for="registerName">Name:</label>
+                        <input type="text" class="form-control" id="registerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">Email address:</label>
+                        <input type="email" class="form-control" id="registerEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Password:</label>
+                        <input type="password" class="form-control" id="registerPassword" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+   
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#" onclick="scrollToHome()">SD International School</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#" onclick="scrollToHome()">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="scrollToAboutUs()">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="scrollToCourses()">Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="scrollToContact()">Contact Us</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link btn btn-outline-primary mr-2" href="#" data-toggle="modal" data-target="#signInModal">Sign In</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn btn-primary mr-2" href="#" data-toggle="modal" data-target="#registerModal">Register</a>
+            </li>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+
+
+   
+    <header class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>Welcome to SD International School</h1>
+                    <p>Providing quality education for a brighter future.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/school.jpg" alt="School Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="images/classroom.jpg" alt="Classroom Image" class="img-fluid">
+                </div>
+                <div class="col-lg-6">
+                    <h2>About Our School</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                    <a href="#" class="btn btn-secondary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+<section class="courses">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Our Courses</h2>
+                <p>Explore the variety of courses offered at our school to enhance your knowledge and skills.</p>
+            </div>
+            <div class="col-lg-6">
+                <div class="course-image">
+                    <img src="images/c1.jpeg" alt="Courses Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+     
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="course-item">
+                    <h3>Class 8</h3>
+                    <p>Course description for Class 8.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="course-item">
+                    <h3>Class 9</h3>
+                    <p>Course description for Class 9.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="course-item">
+                    <h3>Class 10</h3>
+                    <p>Course description for Class 10.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to get in touch? Fill out the form below.</p>
+        
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</section>
+
+
+ 
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 SD International School. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        function scrollToHome() {
+            document.querySelector('.hero').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToAboutUs() {
+            document.querySelector('.about').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToCourses() {
+            document.querySelector('.courses').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToContact() {
+            document.querySelector('.contact').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

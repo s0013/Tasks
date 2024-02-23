@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Examples</title>
+</head>
+<body>
+  <h1>JavaScript Examples</h1>
+
+  <!-- Variables and Data Types -->
+  <div id="variables"></div>
+  <script>
+    let name = "John"; // String
+    let age = 30; // Number
+    let isStudent = false; // Boolean
+    let fruits = ["apple", "banana", "orange"]; // Array
+    let person = { name: "Alice", age: 25 }; // Object
+
+    document.getElementById("variables").innerHTML = `
+      <p>Name: ${name}</p>
+      <p>Age: ${age}</p>
+      <p>Is Student: ${isStudent}</p>
+      <p>Fruits: ${fruits.join(", ")}</p>
+      <p>Person: ${JSON.stringify(person)}</p>
+    `;
+  </script>
+
+  <!-- Functions -->
+  <div id="functions"></div>
+  <script>
+    function greet(name) {
+      return "Hello, " + name + "!";
+    }
+
+    let message = greet("Alice");
+    document.getElementById("functions").innerHTML = `<p>${message}</p>`;
+  </script>
+
+  <!-- Control Flow, Objects, Arrays -->
+  <div id="control-flow"></div>
+  <script>
+    let person2 = {
+      name: "Bob",
+      age: 35,
+      isStudent: false
+    };
+
+    let controlFlowOutput = "";
+    if (person2.isStudent) {
+      controlFlowOutput = `${person2.name} is a student.`;
+    } else {
+      controlFlowOutput = `${person2.name} is not a student.`;
+    }
+
+    let numbers = [1, 2, 3, 4, 5];
+    numbers.forEach(num => {
+      controlFlowOutput += `<p>${num}</p>`;
+    });
+
+    document.getElementById("control-flow").innerHTML = controlFlowOutput;
+  </script>
+
+  <!-- Event Handling -->
+  <div id="event-handling">
+    <button id="myButton">Click me</button>
+  </div>
+  <script>
+    let button = document.getElementById("myButton");
+    button.addEventListener("click", function() {
+      document.getElementById("event-handling").innerHTML += "<p>Button clicked!</p>";
+    });
+  </script>
+</body>
+</html>

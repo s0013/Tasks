@@ -1,0 +1,103 @@
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background-color: rgb(121, 121, 247);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #444;
+}
+
+
+.sidebar {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.slideshow-container img {
+    width: 100%;
+    height: auto;
+}
+
+.slideshow-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.mySlides {
+    flex: 1 1 300px; 
+    margin: 10px; 
+    max-width: 100%; 
+}
+
+article {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #714c4c;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+
+
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    .slideshow-container img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 5px; 
+}
+
